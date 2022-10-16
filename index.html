@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<div id="clock"></div>
+
+<script type="text/javascript">
+
+    function ChangeClock() {
+
+        var time = new Date();
+
+        document.getElementById("clock").innerHTML = "当前时间：" + time.getFullYear() + "年" + (time.getMonth() + 1) + "月" + time.getDate() + "日 " + time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds();
+
+    }
+
+    window.setInterval(ChangeClock, 1000);
+
+</script>
+
+</script>
+
+</html>
